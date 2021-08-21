@@ -1,0 +1,15 @@
+<div class="p-grid">
+  <h1>List Of Available Books</h1>
+
+
+  <div class="p-col-12 p-md-6 p-col-nogutter drag-column">
+    <div *ngFor="let book of availableBooks" class="ui-helper-clearfix">
+      <div class="ui-g-12 ui-md-4" pDraggable="books" (onDragStart)="dragStart($event, book)"
+           (onDragEnd)="dragEnd($event)">
+        <p-panel [header]="book.name" [style]="{'text-align':'center'}">
+          <img src="assets/images/{{book.serialNo}}.PNG" height="50px" width="50px">
+        </p-panel>
+      </div>
+    </div>
+  </div>
+</div>

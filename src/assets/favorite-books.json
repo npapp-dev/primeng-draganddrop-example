@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "name": "The Godfather",
+      "price": 10,
+      "author": "Mario Puzo",
+      "serialNo": "152"
+    },
+    {
+      "name": "The Fellowship of the Ring",
+      "price": 15,
+      "author": "J.R.R. Tolkien",
+      "serialNo": "153"
+    }
+  ]
+}
+

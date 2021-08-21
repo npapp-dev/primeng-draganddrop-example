@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "name": "Harry Potter and the Deathly Hallows",
+      "price": 20,
+      "author": "J.K. Rowling ",
+      "serialNo": "154"
+    },
+    {
+      "name": "Song Of Ice and Fire",
+      "price": 20,
+      "author": "R.R. Martin",
+      "serialNo": "155"
+    }
+  ]
+}
