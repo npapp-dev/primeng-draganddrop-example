@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FavouriteBookComponent } from './favourite-book/favourite-book.component';
 import { AllBookComponent } from './all-book/all-book.component';
+import { TreeModule } from 'primeng/tree';
+import {TreeDragDropService} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,11 @@ import { AllBookComponent } from './all-book/all-book.component';
     DragDropModule,
     PanelModule,
     TableModule,
+    TreeModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TreeDragDropService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
