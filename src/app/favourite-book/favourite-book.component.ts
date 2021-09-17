@@ -23,7 +23,7 @@ export class FavouriteBookComponent implements OnInit {
     }
 
     drop(event: Event) {
-        if (this.draggedBook) {
+        if (this.draggedBook.name) {
             let draggedBookIndex = this.findIndex(this.draggedBook);
             this.favoriteBooks = [...this.favoriteBooks, this.draggedBook];
             this.draggedBook = new Book();
@@ -31,7 +31,7 @@ export class FavouriteBookComponent implements OnInit {
     }
 
     dragEnd(event: Event) {
-        this.draggedBook = new Book();
+        this.draggedBook = new Book
     }
 
       findIndex(book: Book) {

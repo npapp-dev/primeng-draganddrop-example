@@ -8,6 +8,8 @@ export class BookService {
 
   constructor(private http: HttpClient) { }
 
+  draggedBook: Book = new Book();
+
   getAllBooks() {
     return this.http.get<any>('assets/all-books.json')
       .toPromise()
